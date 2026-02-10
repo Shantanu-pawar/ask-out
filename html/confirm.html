@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knew you would say yes BabyGirl!</title>
+    <link rel="stylesheet" href="confirm.css">
+</head>
+<body>
+    <div class="yes-container fade-in">
+        <h1 class="header-text bounce-in">I knew you would say yes! BabyGirl❤️</h1>
+        <div class="gif-container">
+            <img id="slideshow" src="happy1.jpg" alt="Happy GIF" height="400" width="400" loading="lazy">
+        </div>
+
+        <script>
+            // Array of image filenames
+            const images = ["happy1.jpg", "cat-kiss.gif", "happy2.jpg", "happy3.jpg"];
+            let current = 0;
+            const img = document.getElementById('slideshow');
+            setInterval(() => {
+                current = (current + 1) % images.length;
+                img.src = images[current];
+            }, 4000);
+        </script>
+
+    </div>
+</body>
+</html>
